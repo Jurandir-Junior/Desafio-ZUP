@@ -1,0 +1,29 @@
+Desafio concluído em 12/06/2021 às 00:15 me baseando no conteúdo passado nas aulas do minicurso, junto com um pouco do conhecimento que trago do curso tecnico do SENAI e algumas pesquisas na internet.
+
+No HTML fui em busca da simplicidade e organização que aprendi no SENAI, e algumas adaptações para o funcionamento do script. Separei uma section para o cabeçalho, e fiz outras duas sections para separar colunas com duas imagens em cada, que me ajudou a separar usando display:flex.
+
+Para o JavaScript, minha solução foi a seguinte:
+
+Com a função "querySelectorAll", peguei as tags "img" e "p", e converti para arrays, possibilitando a utilização de comandos relacionados a array, pois sem isto, eu teria duas NodeList.
+
+Em seguida reutilizei a função feita em aula para gerar um numero aleatório, mas modifiquei para que eu pudesse gerar 4 números aleatórios e únicos, evitando a chance (mesmo que mínima) de algum número ser gerado duas vezes.
+
+Com algumas modificações, também reutilizei a função "getCharacter" feita em aula, porém, com pesquisas na documentação da API, fiz com que a requisição seja de 4 personagens ao invés de 1, separando o array de números aleatórios e inserindo valor por valor no link da API, e com um "for", inseri a imagem e nome de cada resultado em cada índice do array feito no início.
+
+Com isso tudo feito, o que resta é executar a função, com um simples "window.onload" o comando é executado assim que a página é carregada, e com o "button.onclick" é possível atualizar os personagens mostrados na página.
+
+
+
+Links utilizados e seus propósitos:
+
+Pesquisa básica para noção de diferença entre section e div a fins de organização
+https://stackoverflow.com/questions/6939864/what-is-the-difference-between-section-and-div
+
+Decisão de cor para o background
+https://colorswall.com/palette/17/
+
+Fonte externa utilizada
+https://fonts.google.com/specimen/Merriweather
+
+Pesquisa sobre converter nodelist de queryselectorall para array
+https://gomakethings.com/converting-a-nodelist-to-an-array-with-vanilla-javascript/
